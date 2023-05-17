@@ -1,20 +1,22 @@
-import { lighten } from 'polished';
+import { darken } from 'polished';
 import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
     display: inline-block;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     line-height: 1em;
     transition: 0.2s;
-    color: ${({theme}) => theme.primary};
+    color: ${({theme}) => theme.gray7};
+    background-color: ${({theme}) => theme.white};
+    padding: 12px 16px;
     &:hover{
-        color: ${({theme}) => lighten( 0.1 , theme.primary)};
+        background-color: ${({theme}) => darken( 0.05 , theme.white)};
     }
     &:active{
-        color: ${({theme}) => lighten( 0.05 , theme.primary)};
+        background-color: ${({theme}) => darken( 0.1 , theme.white)};
     }
 `
 function TextButton({ children, onClick }) {

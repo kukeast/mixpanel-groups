@@ -1,25 +1,29 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.input`
     padding: 10px 12px;
-    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
     border: 0;
     outline: none;
     color: ${({theme}) => theme.gray9};
     border: 1px solid ${({theme}) => theme.gray2};
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     transition: 0.2s;
+    border-radius: 4px;
     background-color: ${({theme}) => theme.layer};
     &::placeholder{
         color: ${({theme}) => theme.gray4};
     }
     &:hover{
         border: 1px solid ${({theme}) => theme.gray5};
+        box-shadow: 0px 0px 0px 2px ${({theme}) => theme.gray2};
     }
     &:focus{
         border: 1px solid ${({theme}) => theme.primary};
+        box-shadow: 0px 0px 0px 2px ${({theme}) => theme.primary1};
     }
 `
 

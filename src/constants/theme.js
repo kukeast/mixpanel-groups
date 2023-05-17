@@ -168,6 +168,7 @@ export const lightTheme = {
     primary0: color.INDIGO0,
     
     red: color.RED5,
+    orange: color.ORANGE5,
     yellow: color.YELLOW5,
     green: color.GREEN6,
     teal: color.TEAL6,
